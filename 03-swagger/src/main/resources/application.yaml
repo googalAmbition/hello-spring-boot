@@ -1,0 +1,6 @@
+server:
+  servlet:
+    context-path: /tcoding
+springfox:
+  documentation:
+    enabled: true

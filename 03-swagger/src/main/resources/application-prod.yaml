@@ -1,0 +1,7 @@
+# vm options 里使用 -Dspring.profiles.active=prod
+spring:
+  config:
+    import: classpath:application.yaml
+springfox:
+  documentation:
+    enabled: false
