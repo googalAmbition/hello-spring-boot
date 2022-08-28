@@ -1,13 +1,11 @@
 # Spring-Boot整合框架 Demo
 
-
-
 | 模块 | 功能     |状态|
 |:--------| :-------------|:-----:|
-| 01-hello-world | springMVC + 统一异常处理|   - [x]   |
-| 02-mybatis| mybatis + mybatis generator +自定义type Handler入库加解密 ||
-| 03-mybatis——multi| mybatis 多数据源 + 自定义type Handler入库加解密 ||
-| 04-swagger| swagger3 ||
+| 01-hello-world | springMVC + 统一异常处理|完成 |
+| 02-mybatis| mybatis + mybatis generator +自定义type Handler入库加解密 |完成|
+| 03-mybatis——multi| mybatis 多数据源 + 自定义type Handler入库加解密 |完成|
+| 04-swagger| swagger3 |完成|
 | 04-swagger-beauty| swagger3 ||
 | 05-mybatis-plus| mybatis-plus+generator ||
 | 06-cache-redis| redis ||
