@@ -2,7 +2,7 @@
 
 | 模块 | 功能     |状态|
 |:--------| :-------------|:-----|
-| 01-hello-world | springMVC + 统一异常处理| - [X] |
+| 01-hello-world | springMVC + 统一异常处理| - [x] |
 | 02-mybatis| mybatis + mybatis generator +自定义type Handler入库加解密 ||
 | 03-mybatis——multi| mybatis 多数据源 + 自定义type Handler入库加解密 ||
 | 04-swagger| swagger3 ||
