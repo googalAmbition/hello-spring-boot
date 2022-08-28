@@ -146,8 +146,13 @@
         insert into sys_user (user_name, group_id, password,
         phone_number, c_time, u_time
         )
-        values (#{userName,jdbcType=VARCHAR}, #{groupId,jdbcType=BIGINT}, #{password,jdbcType=VARCHAR,typeHandler=com.tcoding.demo.mybatis.mbg.handler.EncryptTypeHandler},
-        #{phoneNumber,jdbcType=VARCHAR,typeHandler=com.tcoding.demo.mybatis.mbg.handler.EncryptTypeHandler}, #{cTime,jdbcType=TIMESTAMP}, #{uTime,jdbcType=TIMESTAMP}
+        values (#{userName,jdbcType=VARCHAR}, #{groupId,jdbcType=BIGINT},
+        #指定加密字段
+        #{password,jdbcType=VARCHAR,typeHandler=com.tcoding.demo.mybatis.mbg.handler.EncryptTypeHandler},
+        #指定加密字段
+        #{phoneNumber,jdbcType=VARCHAR,typeHandler=com.tcoding.demo.mybatis.mbg.handler.EncryptTypeHandler},
+        #{cTime,jdbcType=TIMESTAMP},
+        #{uTime,jdbcType=TIMESTAMP}
         )
     </insert>
     <insert id="insertSelective" parameterType="com.tcoding.demo.mybatis.mbg.model.SysUser">
