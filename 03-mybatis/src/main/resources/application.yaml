@@ -1,0 +1,28 @@
+server:
+  servlet:
+    context-path: /tcoding
+spring:
+  datasource:
+    db1:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:mysql://127.0.0.1:3306/hello_spring_boot?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: 123456
+#      hikari:
+#        minimum-idle: 5
+#        maximum-pool-size: 15
+#        connection-test-query: "select 1"
+#        max-lifetime: 1800000
+#        connection-timeout: 3000
+#        pool-name: "DatebookHikariCP"
+    db2:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:mysql://127.0.0.1:3306/hello_spring_boot_2?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: 123456
+
+mybatis:
+#  mapper-locations: classpath*:mapper/**/*.xml
+#  type-handlers-package: com.tcoding.demo.mybatis.mbg.handler
