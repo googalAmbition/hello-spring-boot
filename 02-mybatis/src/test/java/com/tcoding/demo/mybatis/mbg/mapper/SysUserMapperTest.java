@@ -1,6 +1,6 @@
 package com.tcoding.demo.mybatis.mbg.mapper;
 
-import com.tcoding.demo.mybatis.ApplicationTests;
+import com.tcoding.demo.mybatis.MybatisApplicationTests;
 import com.tcoding.demo.mybatis.mbg.model.SysUser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author 陈天成
  * @date 2022/8/27.
  */
-public class SysUserMapperTest extends ApplicationTests {
+public class SysUserMapperTest extends MybatisApplicationTests {
 
     @Autowired
     private SysUserMapper sysUserMapper;

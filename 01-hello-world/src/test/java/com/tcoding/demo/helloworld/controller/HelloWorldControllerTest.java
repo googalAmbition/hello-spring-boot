@@ -1,6 +1,6 @@
 package com.tcoding.demo.helloworld.controller;
 
-import com.tcoding.demo.helloworld.ApplicationTests;
+import com.tcoding.demo.helloworld.HelloWorldApplicationTests;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
  * @date 2022/8/27.
  */
 @AutoConfigureMockMvc
-class HelloWorldControllerTest extends ApplicationTests {
+class HelloWorldControllerTest extends HelloWorldApplicationTests {
 
     @Autowired(required = false)
     private MockMvc mockMvc;

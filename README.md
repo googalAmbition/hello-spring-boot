@@ -7,7 +7,7 @@
 | 03-mybatis——multi| mybatis 多数据源 + 自定义type Handler入库加解密 |完成|
 | 04-swagger| swagger3 |完成|
 | 04-swagger-beauty| swagger3 ||
-| 05-mybatis-plus| mybatis-plus+generator ||
+| 05-mybatis-plus|  代码自动生成 +自定义type handler配置 +返回自増主键配置 |完成|
 | 06-cache-redis| redis ||
 | 07-cache-ehcache |||
 | 08-docker |||
