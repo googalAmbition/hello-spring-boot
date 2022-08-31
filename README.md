@@ -8,7 +8,7 @@
 | 04-swagger| swagger3 |完成|
 | 04-swagger-beauty| swagger3 ||
 | 05-mybatis-plus|  代码自动生成 +自定义type handler配置 +返回自増主键配置 |完成|
-| 06-cache-redis| redis ||
+| 06-cache-redis| 集成redis，注解+工具类+序列化器 |完成|
 | 07-cache-ehcache |||
 | 08-docker |||
 | 09-spring-kafka|||

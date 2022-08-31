@@ -17,5 +17,5 @@ spring:
       pool-name: "DatebookHikariCP"
 
 mybatis-plus:
-#  type-handlers-package: com.tcoding.demo.mybatis.mbg.handler
+  #  type-handlers-package: com.tcoding.demo.mybatis.mbg.handler
   mapper-locations: classpath:mapper/**/*.xml

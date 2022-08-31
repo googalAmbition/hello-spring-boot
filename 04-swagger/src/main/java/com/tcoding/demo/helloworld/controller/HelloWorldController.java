@@ -18,7 +18,6 @@ public class HelloWorldController {
         return CommonResult.success("hello world");
     }
 
-
     @GetMapping("/exception")
     public CommonResult<String> exception() {
         int a = 1 / 0;

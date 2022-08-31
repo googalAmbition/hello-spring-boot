@@ -1,11 +1,11 @@
 package com.tcoding.demo.mybatis.mbg.service;
 
-import com.tcoding.demo.mybatis.mbg.entity.SysUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tcoding.demo.mybatis.mbg.entity.SysUser;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author tc

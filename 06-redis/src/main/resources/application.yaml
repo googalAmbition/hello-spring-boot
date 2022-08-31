@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    database: 0
+    username: ""
+    password: "123"
+    timeout: 300
+    client-type: lettuce
+    lettuce:
+      pool:
+        max-active: 6
+        max-idle: 6

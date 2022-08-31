@@ -25,6 +25,7 @@ class HelloWorldControllerTest extends HelloWorldApplicationTests {
             .andExpect(MockMvcResultMatchers.jsonPath("code").value(0))
             .andDo(MockMvcResultHandlers.print());
     }
+
     @Test
     void exception() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/exception"))
