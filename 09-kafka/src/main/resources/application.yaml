@@ -1,0 +1,17 @@
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: tcoding
+      enable-auto-commit: true
+      properties:
+        session.timeout.ms: 15000
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+    producer:
+      retries: 0 #\u82E5\u8BBE\u7F6E\u5927\u4E8E0\u7684\u503C\uFF0C\u5BA2\u6237\u7AEF\u4F1A\u5C06\u53D1\u9001\u5931\u8D25\u7684\u8BB0\u5F55\u91CD\u65B0\u53D1\u9001
+      batch-size: 16384 #\u5F53\u5C06\u591A\u4E2A\u8BB0\u5F55\u88AB\u53D1\u9001\u5230\u540C\u4E00\u4E2A\u5206\u533A\u65F6\uFF0C Producer \u5C06\u5C1D\u8BD5\u5C06\u8BB0\u5F55\u7EC4\u5408\u5230\u66F4\u5C11\u7684\u8BF7\u6C42\u4E2D\u3002\u8FD9\u6709\u52A9\u4E8E\u63D0\u5347\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u7AEF\u7684\u6027\u80FD\u3002\u8FD9\u4E2A\u914D\u7F6E\u63A7\u5236\u4E00\u4E2A\u6279\u6B21\u7684\u9ED8\u8BA4\u5927\u5C0F\uFF08\u4EE5\u5B57\u8282\u4E3A\u5355\u4F4D\uFF09\u300216384\u662F\u7F3A\u7701\u7684\u914D\u7F6E
+      buffer-memory: 33554432 #Producer \u7528\u6765\u7F13\u51B2\u7B49\u5F85\u88AB\u53D1\u9001\u5230\u670D\u52A1\u5668\u7684\u8BB0\u5F55\u7684\u603B\u5B57\u8282\u6570\uFF0C33554432\u662F\u7F3A\u7701\u914D\u7F6E
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer #\u5173\u952E\u5B57\u7684\u5E8F\u5217\u5316\u7C7B
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer #\u503C\u7684\u5E8F\u5217\u5316\u7C7B
