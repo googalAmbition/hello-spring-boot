@@ -12,7 +12,7 @@
 | 07-cache-ehcache |集成ehcache|完成|
 | 08-docker |使用maven自动生成镜像|完成|
 | 09-spring-kafka|集成kafka，配置批量消费|完成|
-| 10-shiro|||
+| 10-shiro|shiro + thymeleaf|完成|
 | 10-spring-security|||
 | 10-spring-security-oath|||
 | 10-spring-security-cas|||

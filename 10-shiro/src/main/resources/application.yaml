@@ -1,0 +1,9 @@
+shiro:
+  enabled: true
+
+spring:
+  thymeleaf:
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false
