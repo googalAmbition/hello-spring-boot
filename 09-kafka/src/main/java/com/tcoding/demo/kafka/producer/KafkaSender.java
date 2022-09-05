@@ -33,7 +33,7 @@ public class KafkaSender {
         message.setDateTime(LocalDateTime.now());
 
         //对 topic =  hello2 的发送消息
-        kafkaTemplate.send("tcoding",gson.toJson(message));
+        kafkaTemplate.send("tcoding", gson.toJson(message));
     }
 }
 

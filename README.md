@@ -13,11 +13,10 @@
 | 08-docker |使用maven自动生成镜像|完成|
 | 09-spring-kafka|集成kafka，配置批量消费|完成|
 | 10-shiro|shiro + thymeleaf|完成|
-| 10-spring-security|||
-| 10-spring-security-oath|||
-| 10-spring-security-cas|||
-| 11-spring-jpa|||
-| 12-hibernate|||
+| 11-spring-security|自定义账号密码登录校验 + thymeleaf|完成|
+| 11-spring-security-oath|||
+| 11-spring-security-cas|||
+| 12-spring-jpa|一对一，一对多，多对多配置，级联操作，小项目使用事半功倍|完成|
 | 13-mongo|||
 | 14-email|||
 | 15-xxl-job|||

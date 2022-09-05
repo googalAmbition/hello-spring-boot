@@ -10,6 +10,7 @@ class EhcacheApplicationTests {
 
     @Autowired
     UserDemo userDemo;
+
     @Test
     void userDemoTest() {
         userDemo.getUserById(1L);

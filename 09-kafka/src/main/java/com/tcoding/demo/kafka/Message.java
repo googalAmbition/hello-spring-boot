@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
  * @date 2022/8/31.
  */
 public class Message {
+
     private Long id;
     private String name;
     private LocalDateTime dateTime;

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello,
+
+<h1>index</h1>
+<p>Hello, <span sec:authentication="principal.username"></span>, how are you today?</p>
+<p sec:authorize="hasRole('admin')">你的角色为超级管理员</p>
+<p sec:authorize="hasRole('test')">你的角色为测试账户</p>
+<div>
+    <a sec:authorize="hasAnyAuthority('view')" th:href="@{/v1/view}">获取用户信息</a>
+    <a sec:authorize="hasAnyAuthority('edit')" th:href="@{/v1/edit}">新增用户</a>
+    <a sec:authorize="hasAnyAuthority('del')" th:href="@{/v1/del}">删除用户</a>
+</div>
+<a th:href="@{/logout}">注销</a>
+
+
+</body>
+</html>

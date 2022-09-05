@@ -16,6 +16,7 @@ public class KafkaConsumer {
 
     /**
      * 单条消费
+     *
      * @param record
      */
     @KafkaListener(topics = {"tcoding"}, groupId = "tcoding1")
@@ -27,6 +28,7 @@ public class KafkaConsumer {
 
     /**
      * 批量消费
+     *
      * @param records
      */
     @KafkaListener(topics = {"tcoding"}, containerFactory = "kafkaListenerContainerFactory")
