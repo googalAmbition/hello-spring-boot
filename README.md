@@ -16,7 +16,7 @@
 | 11-spring-security|自定义账号密码登录校验 + thymeleaf|完成|
 | 11-spring-security-oath|||
 | 11-spring-security-cas|||
-| 12-spring-jpa|一对一，一对多，多对多配置，级联操作，小项目使用事半功倍|完成|
+| 12-spring-jpa|一对一，一对多，多对多配置，级联操作，小项目使用事倍功半|完成|
 | 13-mongo|||
 | 14-email|||
 | 15-xxl-job|||
