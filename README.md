@@ -20,7 +20,7 @@
 | 13-mongo|repository 和 mongoTemplate方式|完成|
 | 14-email|||
 | 15-xxl-job|||
-| 16-websocket|||
+| 16-websocket|websocket+前端测试页面|完成|
 | 17-zookeeper|curator框架|完成|
 | 18-grpc|||
 | 19-thrift|||
