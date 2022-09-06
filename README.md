@@ -21,7 +21,7 @@
 | 14-email|||
 | 15-xxl-job|||
 | 16-websocket|||
-| 17-zookeeper|||
+| 17-zookeeper|curator框架|完成|
 | 18-grpc|||
 | 19-thrift|||
 | 20-neo4j|||
