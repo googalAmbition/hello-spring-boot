@@ -26,7 +26,7 @@
 | 19-thrift|||
 | 20-neo4j|||
 | 21-logback|||
-| 22-elasticsearch|||
+| 22-elasticsearch|repository+template|完成|
 | 23-https|||
 | 24-sharding-sphere|||
 | 25-spring-webflux|||
