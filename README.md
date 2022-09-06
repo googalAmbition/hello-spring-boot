@@ -17,7 +17,7 @@
 | 11-spring-security-oath|||
 | 11-spring-security-cas|||
 | 12-spring-jpa|一对一，一对多，多对多配置，级联操作，小项目使用事倍功半|完成|
-| 13-mongo|||
+| 13-mongo|repository 和 mongoTemplate方式|完成|
 | 14-email|||
 | 15-xxl-job|||
 | 16-websocket|||

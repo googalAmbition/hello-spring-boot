@@ -1,0 +1,12 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://tcoding:123456@127.0.0.1/hello_spring_boot?authSource=hello_spring_boot
+      # \u4E00\u4E0B\u65B9\u5F0F\u62A5\u9519
+#      host: 127.0.0.1
+#      port: 27017
+#      username: tcoding
+#      password: 123456
+#      database: hello_spring_boot
+#      authentication-database: hello_spring_boot
