@@ -35,8 +35,9 @@
 | 28-spring-webFlow|||
 | 29-spring-config|配置文件 开发环境和生产环境区分|完成|
 | 30-hibernate-validator|参数校验|完成|
-| 31-gson|||
-| 32-schedule|定时任务||
+| 31-gson|mvc + 时间序列化和反序列化|完成|
+| 32-schedule|定时任务|完成|
+| 33-jackson|mvc + 时间序列化和反序列化 | 完成|
 
 
 

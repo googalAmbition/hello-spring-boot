@@ -1,0 +1,22 @@
+#spring:
+#  jackson:
+#    #\u65E5\u671F\u683C\u5F0F\u5316
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    serialization:
+#      #\u683C\u5F0F\u5316\u8F93\u51FA
+#      indent_output: true
+#      #\u5FFD\u7565\u65E0\u6CD5\u8F6C\u6362\u7684\u5BF9\u8C61
+#      fail_on_empty_beans: false
+#
+#    #\u8BBE\u7F6E\u7A7A\u5982\u4F55\u5E8F\u5217\u5316
+#    defaultPropertyInclusion: NON_EMPTY
+#    deserialization:
+#      #\u5141\u8BB8\u5BF9\u8C61\u5FFD\u7565json\u4E2D\u4E0D\u5B58\u5728\u7684\u5C5E\u6027
+#      fail_on_unknown_properties: false
+#
+#    parser:
+#      #\u5141\u8BB8\u51FA\u73B0\u7279\u6B8A\u5B57\u7B26\u548C\u8F6C\u4E49\u7B26
+#      allow_unquoted_control_chars: true
+#      #\u5141\u8BB8\u51FA\u73B0\u5355\u5F15\u53F7
+#      allow_single_quotes: true
+#spring.mvc.converters.preferred-json-mapper: jackson
