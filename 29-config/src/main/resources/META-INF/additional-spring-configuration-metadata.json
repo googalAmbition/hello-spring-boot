@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "my.bean",
+      "type": "com.tcoding.demo.config.config.ConfigBean",
+      "sourceType": "com.tcoding.demo.config.config.ConfigBean"
+    }
+  ]
+}

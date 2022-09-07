@@ -1,0 +1,9 @@
+my:
+  bean:
+    id: 1
+    name: dev-tcoding
+  properties:
+    name: dev-tcoding-properties
+spring:
+  config:
+    import: classpath:application.yaml

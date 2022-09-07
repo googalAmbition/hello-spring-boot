@@ -1,0 +1,6 @@
+my:
+  bean:
+    name: prod-tcoding
+
+  properties:
+    name: pro-tcoding-properties

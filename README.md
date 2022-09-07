@@ -29,10 +29,15 @@
 | 22-elasticsearch|repository+template|完成|
 | 23-https|||
 | 24-sharding-sphere|||
-| 25-spring-webflux|||
-| 26-spring-graphQL|||
+| 25-spring-webflux||完成|
+| 26-spring-graphQL||完成|
 | 27-spring-shell|||
 | 28-spring-webFlow|||
+| 29-spring-config||完成|
+| 30-hibernate-validator|||
+| 31-gson|||
+| 32-schedule|||
+
 
 
 
