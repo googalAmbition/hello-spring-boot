@@ -33,10 +33,10 @@
 | 26-spring-graphQL||完成|
 | 27-spring-shell|||
 | 28-spring-webFlow|||
-| 29-spring-config||完成|
-| 30-hibernate-validator|||
+| 29-spring-config|配置文件 开发环境和生产环境区分|完成|
+| 30-hibernate-validator|参数校验|完成|
 | 31-gson|||
-| 32-schedule|||
+| 32-schedule|定时任务||
 
 
 
