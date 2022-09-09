@@ -1,13 +1,12 @@
-package com.tcoding.demo.aop;
+package com.tcoding.demo.https;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AopApplication {
+public class HttpsApplication {
 
     public static void main(String[] args) {
-        args = new String[] {"--for=bar", ""};
-        SpringApplication.run(AopApplication.class, args);
+        SpringApplication.run(HttpsApplication.class, args);
     }
 }

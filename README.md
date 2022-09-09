@@ -15,10 +15,11 @@
 | 10-shiro|shiro + thymeleaf|完成|
 | 11-spring-security|自定义账号密码登录校验 + thymeleaf|完成|
 | 11-spring-security-oath|||
+| 11-spring-security-jwt|||
 | 11-spring-security-cas|||
 | 12-spring-jpa|一对一，一对多，多对多配置，级联操作，小项目使用事倍功半|完成|
 | 13-mongo|repository 和 mongoTemplate方式|完成|
-| 14-aop|aspect + interceptor + filter|完成|
+| 14-aop|aspect + interceptor + filter+Listener+commandline+applicationRun|完成|
 | 15-xxl-job|||
 | 16-websocket|websocket+前端测试页面|完成|
 | 17-zookeeper|curator框架|完成|
@@ -27,7 +28,7 @@
 | 20-neo4j|||
 | 21-logback|||
 | 22-elasticsearch|repository+template|完成|
-| 23-https|||
+| 23-https|整合https|完成|
 | 24-sharding-sphere|||
 | 25-spring-webflux||完成|
 | 26-spring-graphQL||完成|

@@ -1,0 +1,11 @@
+server:
+  port: 8443
+
+  ssl:
+    # \u8BC1\u4E66\u8DEF\u5F84
+    key-store: classpath:server.keystore
+    key-alias: server
+    enabled: true
+    key-store-type: JKS
+    #\u4E0E\u7533\u8BF7\u65F6\u8F93\u5165\u4E00\u81F4
+    key-store-password: 123456
