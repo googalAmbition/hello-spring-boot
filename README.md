@@ -20,7 +20,7 @@
 | 12-spring-jpa|一对一，一对多，多对多配置，级联操作，小项目使用事倍功半|完成|
 | 13-mongo|repository 和 mongoTemplate方式|完成|
 | 14-aop|aspect + interceptor + filter+Listener+commandline+applicationRun|完成|
-| 15-xxl-job|||
+| 15-hateoas|||
 | 16-websocket|websocket+前端测试页面|完成|
 | 17-zookeeper|curator框架|完成|
 | 18-grpc|||
@@ -46,3 +46,4 @@
 | 36-dubbo|||
 | 37-netflix|||
 | 37-alibaba|||
+| 38-xxl-job|||
