@@ -1,6 +1,5 @@
 server:
   port: 8443
-
   ssl:
     # \u8BC1\u4E66\u8DEF\u5F84
     key-store: classpath:server.keystore

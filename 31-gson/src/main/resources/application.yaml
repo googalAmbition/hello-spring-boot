@@ -3,3 +3,4 @@
 #    date-format: yyyy-MM-dd HH:mm:ss
 #    serialize-nulls: true
 #    pretty-printing: true
+spring.mvc.converters.preferred-json-mapper: gson
