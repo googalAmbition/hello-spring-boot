@@ -19,4 +19,6 @@
 #      allow_unquoted_control_chars: true
 #      #\u5141\u8BB8\u51FA\u73B0\u5355\u5F15\u53F7
 #      allow_single_quotes: true
-#spring.mvc.converters.preferred-json-mapper: jackson
+spring.mvc.converters.preferred-json-mapper: jackson
+
+
