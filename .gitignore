@@ -54,6 +54,7 @@ hs_err_pid*
 ### Maven template
 target/
 .idea/
+*.iml
 */target
 .gradle
 pom.xml.tag
