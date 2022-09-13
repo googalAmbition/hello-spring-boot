@@ -17,7 +17,7 @@ import java.sql.SQLException;
  */
 public class EncryptTypeHandler extends BaseTypeHandler<String> {
 
-    private static final String KEY = "9a4601004c1111ec9444b7a8a6f9c533";
+    private static final String KEY = "9a4601004c1111ec9444b7a8a6f90000";
     private static final AES AES = SecureUtil.aes(SecureUtil.generateKey(SymmetricAlgorithm.AES.getValue(), KEY.getBytes()).getEncoded());
 
     @Override

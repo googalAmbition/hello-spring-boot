@@ -1,0 +1,63 @@
+
+# shardingsphere\u8BFB\u5199\u5206\u79BB\u3002\u5206\u7247\u7BC7\u65E5\u5FD7\u6587\u6863 https://shardingsphere.apache.org/document/legacy/3.x/document/cn/manual/sharding-jdbc/configuration/config-yaml/
+spring:
+  shardingsphere:
+    datasource: # \u914D\u7F6E\u6570\u636E\u6E90
+      names: ds_0, ds_1 # \u5206\u5E93\u7684\u903B\u8F91\u5E93\u540D,\u53EF\u914D\u7F6E\u591A\u4E2A
+      ds_0: # \u903B\u8F91\u5E93\u540D
+        type: com.zaxxer.hikari.HikariDataSource
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbcUrl: jdbc:mysql://localhost:3306/hello_spring_boot?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123456
+      ds_1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbcUrl: jdbc:mysql://localhost:3306/hello_spring_boot_2?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123456
+    props:
+      sql:
+        show: true # \u5F00\u542Fsql\u65E5\u5FD7\u8F93\u51FA
+    rules:
+      sharding:
+        sharding-algorithms:
+          database-inline:
+            type: INLINE
+            props:
+              # \u5206\u7247\u7B97\u6CD5\u7684\u884C\u8868\u8FBE\u5F0F\uFF08\u7B97\u6CD5\u81EA\u884C\u5B9A\u4E49\uFF0C\u6B64\u5904\u4E3A\u65B9\u4FBF\u6F14\u793A\u6548\u679C\uFF09
+              algorithm-expression: ds_$->{id % 2}
+          table-inline:
+            type: INLINE
+            props:
+              # \u5206\u7247\u7B97\u6CD5\u7684\u884C\u8868\u8FBE\u5F0F
+              algorithm-expression: sys_user
+        default-key-generate-strategy:
+          column: id
+          key-generator-name: snowflake
+        key-generators:
+          snowflake:
+            type: SNOWFLAKE
+            props:
+              worker-id: 1
+        tables:
+          sys_user:
+            actual-data-nodes: ds_${0..1}.sys_user
+            database-strategy:
+              standard:
+                shardingColumn: id
+                shardingAlgorithmName: database-inline
+                # \u5206\u8868\u7B56\u7565
+            table-strategy:
+              standard:
+                # \u5206\u7247\u5217\u540D\u79F0
+                sharding-column: id
+                # \u5206\u7247\u7B97\u6CD5\u540D\u79F0
+                sharding-algorithm-name: table-inline
+            keyGeneratorColumnName: id
+            keyGenerateStrategy: # \u5206\u5E03\u5F0F\u5E8F\u5217\u7B56\u7565
+              column: id # \u81EA\u589E\u5217\u540D\u79F0\uFF0C\u7F3A\u7701\u8868\u793A\u4E0D\u4F7F\u7528\u81EA\u589E\u4E3B\u952E\u751F\u6210\u5668
+              keyGeneratorName: snowflake
+              props:
+                worker-id: 1
+

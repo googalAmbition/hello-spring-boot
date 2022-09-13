@@ -24,7 +24,7 @@ public class SysUserMapperTest extends MybatisApplicationTests {
         u.setPassword("123456");
         u.setUserName("encrypt");
         u.setPhoneNumber("123456");
-        sysUserMapper.insertSelective(u);
+        sysUserMapper.insert(u);
         SysUser sysUser = sysUserMapper.selectByPrimaryKey(u.getId());
         Assertions.assertEquals(u.getPassword(), sysUser.getPassword());
     }

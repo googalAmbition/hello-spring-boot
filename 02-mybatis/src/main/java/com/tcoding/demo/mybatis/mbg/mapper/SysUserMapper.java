@@ -40,6 +40,11 @@ public interface SysUserMapper {
      *
      * @mbg.generated
      */
+    /**
+     * 返回自増主键，获取方式：entity.getId()
+     */
+    // @Insert("")
+    // @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
     int insert(SysUser record);
 
     /**

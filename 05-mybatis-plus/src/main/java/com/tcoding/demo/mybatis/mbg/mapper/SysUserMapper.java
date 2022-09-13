@@ -2,7 +2,6 @@ package com.tcoding.demo.mybatis.mbg.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.tcoding.demo.mybatis.mbg.entity.SysUser;
-import org.apache.ibatis.annotations.Options;
 
 /**
  * <p>
@@ -14,7 +13,4 @@ import org.apache.ibatis.annotations.Options;
  */
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
-    @Override
-    @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
-    int insert(SysUser entity);
 }
