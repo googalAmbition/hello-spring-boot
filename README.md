@@ -29,7 +29,7 @@
 | 21-logback|||
 | 22-elasticsearch|repository+template|完成|
 | 23-https|整合https|完成|
-| 24-sharding-sphere|数据分片|完成|
+| 24-sharding-sphere|数据分片+jpa|完成|
 | 25-spring-webflux||完成|
 | 26-spring-graphQL||完成|
 | 27-spring-shell|||
