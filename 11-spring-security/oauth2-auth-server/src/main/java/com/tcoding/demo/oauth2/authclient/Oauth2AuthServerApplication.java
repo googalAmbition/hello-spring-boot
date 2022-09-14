@@ -1,4 +1,4 @@
-package com.tcoding.demo.oauth2.authserver;
+package com.tcoding.demo.oauth2.authclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
