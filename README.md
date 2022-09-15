@@ -27,6 +27,7 @@
 | 19-thrift|||
 | 20-neo4j|||
 | 21-logback|||
+| 21-log4j2|||
 | 22-elasticsearch|repository+template|完成|
 | 23-https|整合https|完成|
 | 24-sharding-sphere|数据分片+jpa|完成|
