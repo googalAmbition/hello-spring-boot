@@ -15,15 +15,13 @@ class ShardingSphereApplicationTests {
 
     @Test
     void contextLoads() {
-        for (long i = 100L; i < 110L; i++) {
+        for (long i = 0; i < 10L; i++) {
             SysUser user = new SysUser();
-            // user.setId(i);
             user.setUserName("sharding");
             user.setGroupId(1L);
             user.setPassword("123456");
             user.setPhoneNumber("123456");
             sysUserRepository.save(user);
         }
-
     }
 }

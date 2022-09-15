@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
-import javax.annotation.Resource;
 
 @SpringBootTest
 class MongoApplicationTests {
@@ -36,7 +35,4 @@ class MongoApplicationTests {
     void delTest() {
         bookRepository.deleteById(1);
     }
-    // @Test
-    // void saveTest() {
-    // }
 }
