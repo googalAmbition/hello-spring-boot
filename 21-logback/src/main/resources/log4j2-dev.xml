@@ -3,29 +3,16 @@
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
 <!--    <property name="LOG_HOME" value="/home" />-->
     <!-- 控制台输出 -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <property name="CONSOLE_LOG_PATTERN" value="-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---) {faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} [%X{key1}] [%X{key2}] [%X{key3}] %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
+
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %X{key1} %X{key2} %X{key3} %logger{50} - %msg%n</pattern>-->
+            <pattern>${CONSOLE_LOG_PATTERN} </pattern>
         </encoder>
     </appender>
-    <!-- 按照每天生成日志文件 -->
-<!--    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
-<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
-<!--            &lt;!&ndash;日志文件输出的文件名&ndash;&gt;-->
-<!--            <FileNamePattern>${LOG_HOME}/TestWeb.log.%d{yyyy-MM-dd}.log</FileNamePattern>-->
-<!--            &lt;!&ndash;日志文件保留天数&ndash;&gt;-->
-<!--            <MaxHistory>30</MaxHistory>-->
-<!--        </rollingPolicy>-->
-<!--        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
-<!--            &lt;!&ndash;格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符&ndash;&gt;-->
-<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>-->
-<!--        </encoder>-->
-<!--        &lt;!&ndash;日志文件最大的大小&ndash;&gt;-->
-<!--        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">-->
-<!--            <MaxFileSize>10MB</MaxFileSize>-->
-<!--        </triggeringPolicy>-->
-<!--    </appender>-->
 
     <!-- 日志输出级别 -->
     <root level="INFO">

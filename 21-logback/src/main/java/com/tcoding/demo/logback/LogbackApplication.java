@@ -1,13 +1,12 @@
-package com.tcoding.demo.log4j2;
+package com.tcoding.demo.logback;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class LogbackApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(LogbackApplication.class, args);
     }
-
 }
