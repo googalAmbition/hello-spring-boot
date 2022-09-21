@@ -46,6 +46,9 @@
 | 36-email|发送邮件|完成|
 | 37-devtools|开发工具| |
 | 38-spring-convert|自定义类型转换| 完成|
+| 39-h2|h2 和jdbc|完成 |
+| 40-r2dbc|| |
+| 41-banner|||
 
 
 
