@@ -1,0 +1,4 @@
+rocketmq:
+  producer:
+    group: springBoot
+  name-server: 127.0.0.1:9876

@@ -6,7 +6,6 @@
 | 02-mybatis| mybatis + mybatis generator +自定义type Handler入库加解密 |完成|
 | 03-mybatis——multi| mybatis 多数据源 + 自定义type Handler入库加解密 |完成|
 | 04-swagger| swagger3 |完成|
-| 04-swagger-beauty| swagger3 ||
 | 05-mybatis-plus|  代码自动生成 +自定义type handler配置 +返回自増主键配置 |完成|
 | 06-cache-redis| 集成redis，注解+工具类+序列化器 |完成|
 | 07-cache-ehcache |集成ehcache|完成|
@@ -47,8 +46,9 @@
 | 37-devtools|开发工具| |
 | 38-spring-convert|自定义类型转换| 完成|
 | 39-h2|h2 和jdbc|完成 |
-| 40-r2dbc|| |
-| 41-banner|||
+| 40-r2dbc|h2 + r2dbc + webflux + junit5|完成 |
+| 41-banner|自定义banner|完成|
+| 42-rocketmq|集成rocketMq|完成|
 
 
 
