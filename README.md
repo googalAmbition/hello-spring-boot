@@ -49,6 +49,8 @@
 | 40-r2dbc|h2 + r2dbc + webflux + junit5|完成 |
 | 41-banner|自定义banner|完成|
 | 42-rocketmq|集成rocketMq|完成|
+| 43-retry|spring retry框架|完成|
+
 
 
 
