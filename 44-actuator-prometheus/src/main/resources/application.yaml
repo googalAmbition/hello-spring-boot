@@ -1,0 +1,15 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include:
+          - prometheus
+          - health
+          - info
+
+  metrics:
+    tags:
+      application: tcoding-demo

@@ -50,6 +50,8 @@
 | 41-banner|自定义banner|完成|
 | 42-rocketmq|集成rocketMq|完成|
 | 43-retry|spring retry框架|完成|
+| 44-actuator-prometheus|actuator整合Prometheus|完成|
+| 44-admin|||
 
 
 
