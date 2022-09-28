@@ -1,0 +1,13 @@
+apollo.bootstrap.enabled: true
+
+app:
+  id: tcoding
+apollo:
+  meta: http://localhost:8080
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+
+server:
+  port: 8081
