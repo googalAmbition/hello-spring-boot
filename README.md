@@ -24,7 +24,7 @@
 | 17-zookeeper|curator框架|完成|
 | 18-grpc|||
 | 19-thrift|||
-| 20-neo4j|||
+| 20-neo4j|图数据库|完成|
 | 21-logback|logback+MDC|完成|
 | 21-log4j2|log4j2+MDC|完成|
 | 22-elasticsearch|repository+template|完成|
@@ -32,7 +32,7 @@
 | 24-sharding-sphere|数据分片+jpa|完成|
 | 25-spring-webflux||完成|
 | 26-spring-graphQL||完成|
-| 27-spring-shell|||
+| 27-spring-shell|整合shell|完成|
 | 28-spring-webFlow|||
 | 29-spring-config|配置文件 开发环境和生产环境区分|完成|
 | 29-spring-typesafe|配置自定义配置文件 typesafe||
@@ -55,6 +55,7 @@
 | 46-elk|||
 | 47-seata|集成seata解决分布式事务||
 | 48-Apollo|整合Apollo配置中心|完成|
+| 49-file-process|文件的上传和下载|完成|
 
 
 [comment]: <> (| 36-dubbo|||)
