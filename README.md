@@ -22,8 +22,8 @@
 | 15-hateoas|hateoas初体验|完成|
 | 16-websocket|websocket+前端测试页面|完成|
 | 17-zookeeper|curator框架|完成|
-| 18-grpc|||
-| 19-thrift|||
+| 18-easy-excel|导入、导出Excel|完成|
+| 19-xxl-job|分布式定时调度|完成|
 | 20-neo4j|图数据库|完成|
 | 21-logback|logback+MDC|完成|
 | 21-log4j2|log4j2+MDC|完成|
@@ -56,7 +56,6 @@
 | 47-seata|集成seata解决分布式事务||
 | 48-Apollo|整合Apollo配置中心|完成|
 | 49-file-process|文件的上传和下载|完成|
-
 
 [comment]: <> (| 36-dubbo|||)
 
