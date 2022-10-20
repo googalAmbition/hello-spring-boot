@@ -33,7 +33,7 @@
 | 25-spring-webflux||完成|
 | 26-spring-graphQL||完成|
 | 27-spring-shell|整合shell|完成|
-| 28-spring-webFlow|||
+| 28-spring-filter|filter配置的方式|完成|
 | 29-spring-config|配置文件 开发环境和生产环境区分|完成|
 | 29-spring-typesafe|配置自定义配置文件 typesafe||
 | 30-hibernate-validator|参数校验|完成|
@@ -56,6 +56,7 @@
 | 47-seata|集成seata解决分布式事务||
 | 48-Apollo|整合Apollo配置中心|完成|
 | 49-file-process|文件的上传和下载|完成|
+| 50-extend|springboot所有可扩展接口|完成|
 
 [comment]: <> (| 36-dubbo|||)
 
