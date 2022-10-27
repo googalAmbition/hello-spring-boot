@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/hello_spring_boot?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+  quartz:
+    jdbc:
+      initialize-schema: never
+    job-store-type: JDBC
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: QuartzScheduler # 调度标识名 集群中每一个实例都必须使用相同的名称
+            instanceId: AUTO # 定时任务的实例编号, 如果手动指定需要保证每个节点的唯一性
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 100  # 线程池大小。默认为 10 。
+            threadPriority: 5 # 线程优先级
+          jobStore:
+            misfireThreshold: 120000
