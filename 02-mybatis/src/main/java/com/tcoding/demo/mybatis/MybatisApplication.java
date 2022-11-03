@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan("com.tcoding.demo.mybatis.mbg.mapper")
+@MapperScan({"com.tcoding.demo.mybatis.mbg.mapper","com.tcoding.demo.mybatis.dy.mapper"})
 @SpringBootApplication
 public class MybatisApplication {
 
