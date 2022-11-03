@@ -11,26 +11,27 @@ import javax.validation.ConstraintValidatorContext;
  * @date: 2018/5/17 下午4:21
  **/
 public class InValidator implements ConstraintValidator<In, Object> {
-  private String[] inValues;
-  private boolean required;
 
-  @Override
-  public void initialize(In constraintAnnotation) {
-    inValues = constraintAnnotation.value();
-    required = constraintAnnotation.required();
-  }
+    private String[] inValues;
+    private boolean required;
 
-  @Override
-  public boolean isValid(Object value, ConstraintValidatorContext context) {
-    if (value == null) {
-      return !required || inValues.length <= 0;
+    @Override
+    public void initialize(In constraintAnnotation) {
+        inValues = constraintAnnotation.value();
+        required = constraintAnnotation.required();
     }
 
-    for(String inValue: inValues) {
-      if (inValue.equals(value.toString().trim())) {
-        return true;
-      }
+    @Override
+    public boolean isValid(Object value, ConstraintValidatorContext context) {
+        if (value == null) {
+            return !required || inValues.length <= 0;
+        }
+
+        for (String inValue: inValues) {
+            if (inValue.equals(value.toString().trim())) {
+                return true;
+            }
+        }
+        return false;
     }
-    return false;
-  }
 }

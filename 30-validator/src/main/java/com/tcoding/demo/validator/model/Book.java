@@ -4,10 +4,11 @@ import com.tcoding.demo.validator.validator.annotation.In;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.Length;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
+import javax.validation.constraints.Size;
 
 /**
  * @author 陈天成
@@ -26,15 +27,28 @@ public class Book {
     private String name;
 
     @NotNull(groups = {Save.class, Update.class})
-    @Length(groups = {Save.class, Update.class}, min = 2, max = 10)
+    @Size(min = 2, max = 10)
     private String author;
 
     @In(groups = {Save.class, Update.class}, value = {"math", "chinese"})
     private String category;
 
+    @NotNull
+    @Valid
+    private Publish publish;
+
     public interface Save { }
 
     public interface Update { }
+
+    @Data
+    public static class Publish {
+
+        private Integer id;
+
+        @NotNull
+        private String name;
+    }
 }
 
 

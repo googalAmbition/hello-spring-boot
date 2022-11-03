@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
+import javax.validation.Valid;
 
 /**
  * @author 陈天成
@@ -22,11 +23,11 @@ import java.util.Map;
 @RequestMapping("/book")
 public class IndexController {
 
-    private Map<Integer, Book> map = Map.of(1, new Book(1, "math", "author", "math"),
-        2, new Book(2, "chinese", "author", "chinese"));
+    private Map<Integer, Book> map = Map.of(1, new Book(1, "math", "author", "math", new Book.Publish()),
+        2, new Book(2, "chinese", "author", "chinese", new Book.Publish()));
 
     @PostMapping
-    public String save(@Validated(Book.Save.class) @RequestBody Book book) {
+    public String save(@Validated(Book.Save.class) @Valid @RequestBody Book book) {
         System.out.println(book);
         return book.getAuthor();
     }
@@ -41,10 +42,10 @@ public class IndexController {
     public Book getById(@RequestParam("id") Integer id) {
         return map.get(id);
     }
+
     @GetMapping("/cat")
-    public Book getByCategory(@In({"math","chinese"}) @RequestParam("category") String category ) {
+    public Book getByCategory(@In({"math", "chinese"}) @RequestParam("category") String category) {
         return map.get(1);
     }
-
 }
 
